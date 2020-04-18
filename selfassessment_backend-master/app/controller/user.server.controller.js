@@ -38,7 +38,8 @@ exports.register= async(req,res) => {
     lastName: req.body.lastName,
     password:req.body.password,
     confirmpassword:req.body.confirmpassword,
-    email: req.body.email
+    email: req.body.email,
+    role:req.body.role
     });
 
   const salt= await bcrypt.genSalt(10);
@@ -65,9 +66,6 @@ exports.login = async(req, res , next) => {
 
     const token= user.generateAuthToken();
     console.log("token is here" ,token);
-
-    
-
 
     res.header("x-auth-token", token)
     .header("access-control-expose-headers", "x-auth-token")

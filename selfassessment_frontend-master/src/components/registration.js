@@ -9,7 +9,8 @@ const Registration = () => {
     lastName: "",
     email: "",
     password: "",
-    confirmpassword: ""
+    confirmpassword: "",
+    role: ""
   });
 
   const handleChange = event => {
@@ -41,7 +42,6 @@ const Registration = () => {
           <Form.Label>First Name</Form.Label>
           <Form.Control type="text" name="firstName" placeholder="Enter first name"  value={registeruser.firstName}
           onChange={handleChange} />
-          
         </Form.Group>
 
         <Form.Group controlId="formBasicEmail">
@@ -70,6 +70,12 @@ const Registration = () => {
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control type="password" name="confirmpassword" placeholder="Confirm Password" value={registeruser.confirmpassword}
           onChange={handleChange} />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>You are: </Form.Label>
+          <Form.Check type="checkbox" label="Patient" name="role" value={"Patient"} onChange={handleChange} ></Form.Check>
+          <Form.Check type="checkbox" label="Nurse"  name="role" value={"Nurse"} onChange={handleChange}></Form.Check>
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
