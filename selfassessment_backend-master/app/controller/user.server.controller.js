@@ -74,6 +74,22 @@ exports.login = async(req, res , next) => {
     next();    
 };
 
+exports.profile=async(req,res) =>{
+  const userId = req.user.id;
+  console.log(userId);
+
+  let profile = await User.findOne({_id: userId}); 
+    const username = req.body.username;
+    await User.find( {username} , (err,username)=> {
+      if(err){
+        return next(err);
+      }
+      else{
+        res.send(username);
+        console.log(username);
+      }
+    })
+}
 exports.reportnurse = async(req,res) => {
   console.log("Came here");
   //const {error}= validatereportnurse(req.body);

@@ -76,6 +76,7 @@ const SearchbyEmail = () => {
   return (
     <div className="App">
       
+            <p>Enter the email here:</p>
             <input
               type="text"
               name="patientemail"
@@ -83,7 +84,8 @@ const SearchbyEmail = () => {
               onChange={handleChange}
               required
             />
-            <div className="input-field">
+            <br></br>
+            <div className="btn btn-danger btn-sm" >
               <button className="btn" type="submit" onClick={handleClick}>
                 Search
               </button>

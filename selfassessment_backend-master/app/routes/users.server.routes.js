@@ -12,6 +12,8 @@ module.exports = function(app) {
 
   app.get('/listallreports', auth , user.listallreports);
 
+  app.get('/profile',auth,user.profile)
+
   app.post('/listbyemail', auth, user.listbyemail);
 
   app.post('/reportuser', auth, user.reportuser );

@@ -13,37 +13,34 @@ const handleSelect = (selectedIndex, e) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1335&q=80"
+          src="https://www.thebalancecareers.com/thmb/RRpbEHhLcWB6rslsCuFt4QE76wc=/3000x2000/filters:fill(auto,1)/doctor-career-information-526008-FINAL-7319a84e6dbe4685825c819c63cdc0c1.png"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>How to talk to your doctor</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2016/05/how-to-talk-to-your-doctor.jpg"
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>A day in the life of a doctor</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1584521764592-48f33fe7e088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          src="https://image.shutterstock.com/z/stock-photo-large-group-of-doctors-and-nurses-isolated-on-white-129136301.jpg"
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Doctor and nurses
           </p>
         </Carousel.Caption>
       </Carousel.Item>

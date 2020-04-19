@@ -34,9 +34,9 @@ function Login() {
     }
     else{
     
-    const user= jwtDecode(jwt);
-    setUser( {user});
-    console.log("user afted logged in", user);
+    const user12= jwtDecode(jwt);
+    setUser( {user12});
+    console.log("user afted logged in", user12);
 
     }
   }
@@ -96,20 +96,13 @@ function Login() {
         </div>
         : <div>
           <Jumbotron>
-        <h1>Hello, world!</h1>
         <h1>
-           Welcome {user.user.firstName} </h1> 
-          <p>How are you feeling today?</p>
+           Welcome {user.user12.firstName} </h1> 
+          <p>How can we help you today?</p>
         <p>
-          This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
-          </p>
-      <p>
-         <Button variant="primary">Learn more</Button>
-          </p>
-        </Jumbotron>
-          
-          
+          Please use the function in the navigation bar
+        </p>
+        </Jumbotron>          
           </div>
         //<View screen={screen} setScreen={setScreen} />
       }
