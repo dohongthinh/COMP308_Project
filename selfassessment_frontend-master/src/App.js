@@ -15,6 +15,7 @@ import ReportUser from "./components/reportuser";
 import Emergency from "./components/emergency";
 import Addtips from "./components/addtips";
 import Carousel from 'react-bootstrap/Carousel'
+import SelfAssessment from './components/selfassessment'
 import Carousel1 from './components/carousel';
 import Footer from './components/footer';
 
@@ -78,6 +79,7 @@ function App() {
           <Route path="/registration" component={Registration}></Route>
           <Route path="/reportnurse" component={ReportNurse}></Route>
           <Route path="/searchallreports" component={SearchAllreports}></Route>
+          <Route path="/self" component={SelfAssessment}></Route>
           <Route path="/searchbyemail" component={SearchbyEmail}></Route>
           <Route path="/reportuser" component={ReportUser}></Route>
           <Route path="/emergency" component={Emergency}></Route>

@@ -13,7 +13,7 @@ const handleSelect = (selectedIndex, e) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.thebalancecareers.com/thmb/RRpbEHhLcWB6rslsCuFt4QE76wc=/3000x2000/filters:fill(auto,1)/doctor-career-information-526008-FINAL-7319a84e6dbe4685825c819c63cdc0c1.png"
+          src="https://www.profacts.be/uploads/general/shutterstock_1216683775-bis2.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,7 +23,7 @@ const handleSelect = (selectedIndex, e) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2016/05/how-to-talk-to-your-doctor.jpg"
+          src="https://www.trentu.ca/futurestudents/sites/trentu.ca.futurestudents/files/styles/header_image/public/MedicalProfessionalsStrean_490543594.jpg.jpg?itok=FQ_pjG9G"
           alt="Second slide"
         />
 
@@ -34,7 +34,7 @@ const handleSelect = (selectedIndex, e) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://image.shutterstock.com/z/stock-photo-large-group-of-doctors-and-nurses-isolated-on-white-129136301.jpg"
+          src="https://www.abes.ca/uploads/4kBJa9LD/Medical-Device_17781908.jpg"
           alt="Third slide"
         />
 

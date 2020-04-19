@@ -1,0 +1,290 @@
+[
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 1,
+      "headache": 0,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 0,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 0,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "negative"
+    },
+    {
+      "cough": 0,
+      "fever": 0,
+      "headache": 0,
+      "fatigue": 1,
+      "nausea": 0,
+      "condition": "negative"
+    },
+    {
+      "cough": 1,
+      "fever": 1,
+      "headache": 1,
+      "fatigue": 1,
+      "nausea": 1,
+      "condition": "positive"
+    },
+    {
+      "cough": 1,
+      "fever": 0,
+      "headache": 1,
+      "fatigue": 0,
+      "nausea": 1,
+      "condition": "positive"
+    }
+]

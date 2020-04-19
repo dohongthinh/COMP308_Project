@@ -6,7 +6,7 @@ const NavBar = ({ u }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="#">
-        Self Assessment
+        Nema
       </Link>
       <button
         className="navbar-toggler"
@@ -31,6 +31,9 @@ const NavBar = ({ u }) => {
               </NavLink>
               <NavLink className="nav-item nav-link" to="/registration">
                 Registration
+              </NavLink>
+              <NavLink className="nav-item nav-link" to="/self">
+                Self Assessment
               </NavLink>
             </React.Fragment>
           )}

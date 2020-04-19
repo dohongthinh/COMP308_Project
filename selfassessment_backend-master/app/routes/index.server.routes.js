@@ -4,5 +4,7 @@ const index= require('../controller/index.server.controller');
 module.exports = function(app) {
 	
   app.get('/', index.home);
+  app.post('/predict', index.predictEmergency);
+  app.post('/predictResult', index.result);
  
 };
