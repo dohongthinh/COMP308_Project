@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 const NavBar = ({ u }) => {
   console.log("Role from navbar is here", u.user);
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="#">
         Nema
       </Link>

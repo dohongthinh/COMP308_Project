@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
@@ -31,15 +30,16 @@ function SelfAssessment(props) {
         }
         axios.post(apiUrl, input)
         .then((res) => {
-            setShowLoading(true);
-            setMessage("Successfully Saved. Navigate to Result Custom to view the prediction results.");
+            setShowLoading(false);
             if(res.data.condition == 'positive')
             {
                 window.alert("Your result is Positive. \nF.");
+                setMessage("Your result is Positive. \nF.");
             }
             else if(res.data.condition == 'negative')
             {
                 window.alert("Your result is Negatve. \nStay at home.");
+                setMessage("Your result is Negatve. \nStay at home. ");
             }
              
         }).catch((error) => setShowLoading(false));
@@ -58,13 +58,13 @@ function SelfAssessment(props) {
                 </Spinner>
             }
             
-        <div id="center">
+        <div class="container-fluid">
             <h1>Symptoms Checklist</h1>
-            <h2>Please select all symptoms you may have</h2>
-         
-     
-            <Jumbotron>
-                <Form onSubmit={saveData}>
+            <h2>Please select all symptoms that you are experiencing</h2>
+            <br/>
+            <h2 id="message">{message}</h2>
+            <br/>
+            <Form onSubmit={saveData}>
                 <Form.Group>
                         <Form.Label>Cough</Form.Label>
                         <Form.Check type="radio" label="No" name="cough" id="cough" value="0" onChange={onChange}/>
@@ -91,10 +91,8 @@ function SelfAssessment(props) {
                         <Form.Check type="radio" label="Yes" name="nausea" id="nausea" value="1" onChange={onChange}/>
                     </Form.Group>
                   
-                    <Button variant="primary" type="submit">Check symptoms</Button>
-                    <p id="message">{message}</p>
-                </Form>
-            </Jumbotron>
+                    <Button variant="primary" type="submit">Diagnose</Button>
+            </Form>
         </div>
         </div>
     )
