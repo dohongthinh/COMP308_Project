@@ -10,19 +10,7 @@ const tf = require('@tensorflow/tfjs');
 const symptoms = require ('../../symptoms.json');
 const conditions = Array.from(new Set(symptoms.map(item => item.condition)));
 
-exports.checklist = (req, res) =>{
-    var session = req.session;
-
-    session.cough = req.body.cough;
-    session.fever = req.body.fever;
-    session.fatigue = req.body.fatigue;
-    session.nausea = req.body.nausea;
-    session.headache = req.body.headache;
-    res.redirect('/analyzeData');
-
-};
-
-exports.predictEmergency = (req, res) => {
+exports.predict = (req, res) => {
     
     const trainingData = tf.tensor2d(symptoms.map(item => [
         item.cough,
@@ -36,15 +24,6 @@ exports.predictEmergency = (req, res) => {
         item.condition === "positive" ? 1 : 0,
         item.condition === "negative" ? 1: 0
     ]));
-
-    var session = req.session;
-
-    // console.log("session data: ");
-    // console.log("session.cough: ", session.cough);
-    // console.log("session.fever: ", session.fever);
-    // console.log("session.fatigue: ", session.fatigue);
-    // console.log("session.headache: ", session.headache);
-    // console.log("session.nausea: ", session.nausea);
 
     var cough = parseInt(req.body.cough);
     var fever = parseInt(req.body.fever);
@@ -98,7 +77,6 @@ exports.predictEmergency = (req, res) => {
         results.array().then(array => {
             var datatosend = {result: array[0], condition:conditions[index]};
             res.status(200).send(datatosend);
-            var session = req.session;
             console.log(datatosend);
         });
     }
