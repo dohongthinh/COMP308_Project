@@ -227,3 +227,28 @@ exports.emergency = async(req,res)=> {
   }
    
 }
+
+exports.listallemer = async (req,res) => {
+
+  console.log("checking cookie for debug" , req.cookies.token);
+  const nurseid= req.user._id;
+  console.log(nurseid);
+
+  let nurseprofile= await User.findOne({ _id: nurseid});
+
+  if(nurseprofile.role != 'Nurse'){
+    res.status(401).send("Not Authorised");
+  }
+  else{
+
+
+    await Emergency.find( {} , (err,reports)=> {
+      if(err){
+        return next(err);
+      }
+
+      res.send(reports);
+      console.log(reports);
+    })
+  }
+}

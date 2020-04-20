@@ -20,4 +20,6 @@ module.exports = function(app) {
 
   app.get('/read_cookie', user.findtoken);
 
+  app.get('/listallemer', auth , user.listallemer);
+
 };

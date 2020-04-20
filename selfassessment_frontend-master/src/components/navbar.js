@@ -6,7 +6,7 @@ const NavBar = ({ u }) => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="#">
-        Nema
+        Group Project
       </Link>
       <button
         className="navbar-toggler"
@@ -62,6 +62,9 @@ const NavBar = ({ u }) => {
 
               <NavLink className="nav-item nav-link" to="/searchallreports">
                 Search
+              </NavLink>
+              <NavLink className="nav-item nav-link" to="/searchallemer">
+                Search Emergency
               </NavLink>
             </React.Fragment>
           )}

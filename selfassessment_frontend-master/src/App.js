@@ -7,6 +7,7 @@ import Registration from './components/registration';
 import ReportNurse from './components/reportnurse';
 import SearchAllreports from './components/searchallreports';
 import SearchbyEmail from './components/searchbyemail';
+import SearchAllEmer from './components/searchallemer';
 import Login from './components/login';
 import Navbar from "./components/navbar";
 import Profile from "./components/profile";
@@ -83,7 +84,8 @@ function App() {
           <Route path="/searchbyemail" component={SearchbyEmail}></Route>
           <Route path="/reportuser" component={ReportUser}></Route>
           <Route path="/emergency" component={Emergency}></Route>
-          <Route path="/addTips" component={Addtips}></Route>
+          <Route path="/addTips" component={Addtips}></Route>         
+          <Route path="/searchallemer" component={SearchAllEmer}></Route>
           <Redirect from="/" to="/login" />
           <Redirect to="" />
         </Switch>

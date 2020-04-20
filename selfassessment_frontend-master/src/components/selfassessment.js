@@ -33,13 +33,13 @@ function SelfAssessment(props) {
             setShowLoading(false);
             if(res.data.condition == 'positive')
             {
-                window.alert("Your result is Positive. \nF.");
-                setMessage("Your result is Positive. \nF.");
+                window.alert("You are not okay! \nPlease visit your doctor!");
+                setMessage("You are not okay! \nPlease visit your doctor!.");
             }
             else if(res.data.condition == 'negative')
             {
-                window.alert("Your result is Negatve. \nStay at home.");
-                setMessage("Your result is Negatve. \nStay at home. ");
+                window.alert("Your result is good. \nStay at home!");
+                setMessage("Your result is good. \nStay at home! ");
             }
              
         }).catch((error) => setShowLoading(false));
